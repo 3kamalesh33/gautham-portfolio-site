@@ -84,12 +84,12 @@
             <p>Premier B2B marketing firm with five-year legacy serving over 1,000 clients worldwide. Industry leaders with deep insights and exceptional expertise.</p>
             <div class="stats">
                 <div class="stat">
-                    <h3>5</h3>
-                    <p>Years Experience</p>
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Years Experience</span>
                 </div>
                 <div class="stat">
-                    <h3>1K+</h3>
-                    <p>Global Clients</p>
+                    <span class="stat-number">1K+</span>
+                    <span class="stat-label">Global Clients</span>
                 </div>
             </div>
         </div>
@@ -200,7 +200,7 @@
         <div class="container">
             <h2>Start Your Project</h2>
             <p>Ready to boost your lead generation? Get in touch today!</p>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+            <form action="https://formspree.io/f/manpnbyj" method="POST" class="contact-form">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Your Name" required>
                 </div>
@@ -213,6 +213,8 @@
                 <div class="form-group">
                     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                 </div>
+                <!-- Honeypot field for spam protection -->
+                <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
             <div class="contact-links">
@@ -226,7 +228,6 @@
             <p>&copy; 2024 Gautham Pradeep S. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
